@@ -1,0 +1,1 @@
+/home/alex/gitControlNetbeans/new_mrdev/appsSimulator/CMakeFiles/simulator.dir

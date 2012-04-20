@@ -1,0 +1,6 @@
+/home/alex/gitControl/libraries/localizer/CMakeFiles/localizer.dir
+/home/alex/gitControl/tests/CMakeFiles/localizerTest.dir
+/home/alex/gitControl/libraries/objects/CMakeFiles/objects.dir
+/home/alex/gitControl/appSimulator/CMakeFiles/simulator.dir
+/home/alex/gitControl/appTeleop/CMakeFiles/teleop.dir
+/home/alex/gitControl/tests/CMakeFiles/worldTest.dir

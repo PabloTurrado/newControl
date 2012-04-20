@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="80">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df name="tests" root=".">
+      <df name="CMakeFiles">
+        <df name="CMakeTmp">
+          <df name="CMakeFiles">
+            <df name="cmTryCompileExec.dir">
+              <in>DependInfo.cmake</in>
+              <in>build.make</in>
+              <in>cmake_clean.cmake</in>
+              <in>depend.make</in>
+              <in>flags.make</in>
+              <in>link.txt</in>
+              <in>progress.make</in>
+            </df>
+            <in>CMakeDirectoryInformation.cmake</in>
+            <in>Makefile.cmake</in>
+            <in>Makefile2</in>
+            <in>TargetDirectories.txt</in>
+            <in>cmake.check_cache</in>
+            <in>progress.marks</in>
+          </df>
+          <in>CMakeCache.txt</in>
+          <in>CMakeLists.txt</in>
+          <in>Makefile</in>
+          <in>cmake_install.cmake</in>
+          <in>testCCompiler.c</in>
+        </df>
+        <df name="CompilerIdC">
+          <in>CMakeCCompilerId.c</in>
+          <in>a.out</in>
+        </df>
+        <df name="CompilerIdCXX">
+          <in>CMakeCXXCompilerId.cpp</in>
+          <in>a.out</in>
+        </df>
+        <df name="localizerTest.dir">
+        </df>
+        <df name="worldTest.dir">
+        </df>
+      </df>
+      <in>glutapp.cpp</in>
+      <in>glutapp.h</in>
+      <in>gluttestMHGtransformation.cpp</in>
+      <in>mainMHGtests.cpp</in>
+      <in>testlocalizer.cpp</in>
+      <in>worldTest.cpp</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>CMakeLists.txt</itemPath>
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+      </makefileType>
+    </conf>
+  </confs>
+</configurationDescriptor>

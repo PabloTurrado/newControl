@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/teleop.dir/teleop.cpp.o CMakeFiles/teleop.dir/glutapp.cpp.o  -o teleop -rdynamic -L/usr/local/mrcore/lib -lmrcore -lglut -lGL -lGLU -Wl,-rpath,/usr/local/mrcore/lib: 

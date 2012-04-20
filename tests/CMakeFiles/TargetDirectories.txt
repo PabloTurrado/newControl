@@ -1,0 +1,2 @@
+/home/alex/gitControl/tests/CMakeFiles/localizerTest.dir
+/home/alex/gitControl/tests/CMakeFiles/worldTest.dir

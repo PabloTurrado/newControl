@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/alex/gitControl/appSimulator/glutapp.cpp
-glutapp.h
-/home/alex/gitControl/appSimulator/glutapp.h
-iostream
--
-
 /home/alex/gitControl/appSimulator/glutapp.h
 string
 -
@@ -19,8 +13,8 @@ GL/glut.h
 /home/alex/gitControl/appSimulator/GL/glut.h
 
 /home/alex/gitControl/appSimulator/simulator.cpp
-mrcore/mrcore.h
-/home/alex/gitControl/appSimulator/mrcore/mrcore.h
+/usr/local/mrcore/include/mrcore/mrcore.h
+-
 iostream
 -
 glutapp.h

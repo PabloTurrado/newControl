@@ -53,13 +53,40 @@
               <pElem>.</pElem>
             </incDir>
           </cTool>
-          <ccTool>
-            <incDir>
-              <pElem>.</pElem>
-            </incDir>
-          </ccTool>
         </makeTool>
       </makefileType>
+      <folder path="appSimulator/CMakeFiles">
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <item path="glutapp.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="simulator.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>../libraries/freeglut</pElem>
+            <pElem>/usr/local/mrcore/include</pElem>
+            <pElem>../libraries/objects/include</pElem>
+            <pElem>../libraries/freeglut/include</pElem>
+            <pElem>../libraries/objects</pElem>
+            <pElem>../libraries/localizer</pElem>
+            <pElem>../libraries/localizer/include</pElem>
+            <pElem>/usr/local/mrcore/include/mrcore</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>FREEGLUT_STATIC</Elem>
+            <Elem>_CRT_SECURE_NO_WARNINGS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
     </conf>
   </confs>
 </configurationDescriptor>

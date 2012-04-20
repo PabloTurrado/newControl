@@ -34,24 +34,22 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CPACK_ABSOLUTE_DESTINATION_FILES
-   "/usr/local/mrcore/data/configMyRoom.txt~;/usr/local/mrcore/data/myRoom.world;/usr/local/mrcore/data/configMyRoom.txt;/usr/local/mrcore/data/config.txt;/usr/local/mrcore/data/configSquaredRoom.txt~;/usr/local/mrcore/data/configSquaredRingWalls.txt;/usr/local/mrcore/data/configSquaredRoom.txt;/usr/local/mrcore/data/rampas.world;/usr/local/mrcore/data/configSquaredRingNoWalls.txt;/usr/local/mrcore/data/squaredRingNoWalls.world;/usr/local/mrcore/data/config2.txt;/usr/local/mrcore/data/controlTest.world;/usr/local/mrcore/data/squaredRingWalls.world;/usr/local/mrcore/data/configControl.txt;/usr/local/mrcore/data/squaredRoom.world;/usr/local/mrcore/data/flat.world")
-FILE(INSTALL DESTINATION "/usr/local/mrcore/data" TYPE FILE FILES
-    "/home/alex/gitControl/data/configMyRoom.txt~"
-    "/home/alex/gitControl/data/myRoom.world"
-    "/home/alex/gitControl/data/configMyRoom.txt"
-    "/home/alex/gitControl/data/config.txt"
-    "/home/alex/gitControl/data/configSquaredRoom.txt~"
-    "/home/alex/gitControl/data/configSquaredRingWalls.txt"
-    "/home/alex/gitControl/data/configSquaredRoom.txt"
-    "/home/alex/gitControl/data/rampas.world"
-    "/home/alex/gitControl/data/configSquaredRingNoWalls.txt"
-    "/home/alex/gitControl/data/squaredRingNoWalls.world"
-    "/home/alex/gitControl/data/config2.txt"
-    "/home/alex/gitControl/data/controlTest.world"
-    "/home/alex/gitControl/data/squaredRingWalls.world"
-    "/home/alex/gitControl/data/configControl.txt"
-    "/home/alex/gitControl/data/squaredRoom.world"
-    "/home/alex/gitControl/data/flat.world"
+   "/usr/local/mrcore/data/world/myRoom.world;/usr/local/mrcore/data/world/configMyRoom.txt;/usr/local/mrcore/data/world/config.txt;/usr/local/mrcore/data/world/configSquaredRingWalls.txt;/usr/local/mrcore/data/world/configSquaredRoom.txt;/usr/local/mrcore/data/world/rampas.world;/usr/local/mrcore/data/world/configSquaredRingNoWalls.txt;/usr/local/mrcore/data/world/squaredRingNoWalls.world;/usr/local/mrcore/data/world/config2.txt;/usr/local/mrcore/data/world/controlTest.world;/usr/local/mrcore/data/world/squaredRingWalls.world;/usr/local/mrcore/data/world/configControl.txt;/usr/local/mrcore/data/world/squaredRoom.world;/usr/local/mrcore/data/world/flat.world")
+FILE(INSTALL DESTINATION "/usr/local/mrcore/data/world" TYPE FILE FILES
+    "/home/alex/gitControl/data/world/myRoom.world"
+    "/home/alex/gitControl/data/world/configMyRoom.txt"
+    "/home/alex/gitControl/data/world/config.txt"
+    "/home/alex/gitControl/data/world/configSquaredRingWalls.txt"
+    "/home/alex/gitControl/data/world/configSquaredRoom.txt"
+    "/home/alex/gitControl/data/world/rampas.world"
+    "/home/alex/gitControl/data/world/configSquaredRingNoWalls.txt"
+    "/home/alex/gitControl/data/world/squaredRingNoWalls.world"
+    "/home/alex/gitControl/data/world/config2.txt"
+    "/home/alex/gitControl/data/world/controlTest.world"
+    "/home/alex/gitControl/data/world/squaredRingWalls.world"
+    "/home/alex/gitControl/data/world/configControl.txt"
+    "/home/alex/gitControl/data/world/squaredRoom.world"
+    "/home/alex/gitControl/data/world/flat.world"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

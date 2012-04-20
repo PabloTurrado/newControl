@@ -6,36 +6,18 @@
         <df name="CMakeTmp">
           <df name="CMakeFiles">
             <df name="cmTryCompileExec.dir">
-              <in>DependInfo.cmake</in>
-              <in>build.make</in>
-              <in>cmake_clean.cmake</in>
-              <in>depend.make</in>
-              <in>flags.make</in>
-              <in>link.txt</in>
-              <in>progress.make</in>
             </df>
-            <in>CMakeDirectoryInformation.cmake</in>
-            <in>Makefile.cmake</in>
-            <in>Makefile2</in>
-            <in>TargetDirectories.txt</in>
-            <in>cmake.check_cache</in>
-            <in>progress.marks</in>
           </df>
-          <in>CMakeCache.txt</in>
-          <in>CMakeLists.txt</in>
-          <in>Makefile</in>
-          <in>cmake_install.cmake</in>
-          <in>testCCompiler.c</in>
         </df>
         <df name="CompilerIdC">
           <in>CMakeCCompilerId.c</in>
-          <in>a.out</in>
         </df>
         <df name="CompilerIdCXX">
           <in>CMakeCXXCompilerId.cpp</in>
-          <in>a.out</in>
         </df>
         <df name="localizerTest.dir">
+        </df>
+        <df name="Progress">
         </df>
         <df name="worldTest.dir">
         </df>
@@ -71,7 +53,7 @@
           <buildCommandWorkingDir>.</buildCommandWorkingDir>
           <buildCommand>${MAKE} -f Makefile</buildCommand>
           <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
-          <executablePath></executablePath>
+          <executablePath>worldTest</executablePath>
         </makeTool>
       </makefileType>
     </conf>

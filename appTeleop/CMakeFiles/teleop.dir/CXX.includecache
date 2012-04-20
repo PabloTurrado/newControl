@@ -6,37 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/alex/gitControl/appTeleop/glutapp.cpp
-glutapp.h
-/home/alex/gitControl/appTeleop/glutapp.h
+/home/alex/gitControl/appTeleop/ReactiveControl/../globalFunctions.h
+/usr/local/mrcore/include/mrcore/mrcore.h
+-
+
+/home/alex/gitControl/appTeleop/ReactiveControl/ControlReactivo.cpp
+GL/freeglut_std.h
+-
+ControlReactivo.h
+/home/alex/gitControl/appTeleop/ReactiveControl/ControlReactivo.h
+../globalFunctions.h
+/home/alex/gitControl/appTeleop/ReactiveControl/../globalFunctions.h
+
+/home/alex/gitControl/appTeleop/ReactiveControl/ControlReactivo.h
+/usr/local/mrcore/include/mrcore/mrcore.h
+-
 iostream
 -
-
-/home/alex/gitControl/appTeleop/glutapp.h
-string
--
-GL/glut.h
-/home/alex/gitControl/appTeleop/GL/glut.h
-
-/home/alex/gitControl/appTeleop/reactivecontrol.h
-mrcore/mrcore.h
-/home/alex/gitControl/appTeleop/mrcore/mrcore.h
-
-/home/alex/gitControl/appTeleop/teleop.cpp
-mrcore/mrcore.h
-/home/alex/gitControl/appTeleop/mrcore/mrcore.h
-iostream
--
-glutapp.h
-/home/alex/gitControl/appTeleop/glutapp.h
-reactivecontrol.h
-/home/alex/gitControl/appTeleop/reactivecontrol.h
-trajcontrol.h
-/home/alex/gitControl/appTeleop/trajcontrol.h
-
-/home/alex/gitControl/appTeleop/trajcontrol.h
-mrcore/mrcore.h
-/home/alex/gitControl/appTeleop/mrcore/mrcore.h
 
 /usr/local/mrcore/include/mrcore/base/datalog.h
 data/data.h
@@ -1729,8 +1715,4 @@ GL/glu.h
 -
 stdlib.h
 -
-
-libraries/freeglut/include/GL/glut.h
-freeglut_std.h
-libraries/freeglut/include/GL/freeglut_std.h
 

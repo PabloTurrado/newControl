@@ -50,8 +50,8 @@ ADD_SUBDIRECTORY(tests)
 #
 ####################################################################################################
 
-FILE(GLOB datafiles "${CMAKE_CURRENT_SOURCE_DIR}/data/*")
-INSTALL(FILES ${datafiles} DESTINATION "${CMAKE_INSTALL_PREFIX}/data")
+FILE(GLOB datafiles "${CMAKE_CURRENT_SOURCE_DIR}/data/world/*")
+INSTALL(FILES ${datafiles} DESTINATION "${CMAKE_INSTALL_PREFIX}/data/world")
 
 
 

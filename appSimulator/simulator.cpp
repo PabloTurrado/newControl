@@ -1,4 +1,6 @@
-#include "mrcore/mrcore.h"
+//#include "mrcore/mrcore.h"    //Funciona, pero NetBeans no reconoce los comandos
+#include "/usr/local/mrcore/include/mrcore/mrcore.h"
+
 #include <iostream>
 #include "glutapp.h"
 

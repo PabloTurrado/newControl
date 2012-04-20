@@ -92,16 +92,191 @@ appTeleop/CMakeFiles/teleop.dir/glutapp.cpp.o.provides: appTeleop/CMakeFiles/tel
 
 appTeleop/CMakeFiles/teleop.dir/glutapp.cpp.o.provides.build: appTeleop/CMakeFiles/teleop.dir/glutapp.cpp.o
 
+appTeleop/CMakeFiles/teleop.dir/PathControl/Control.cpp.o: appTeleop/CMakeFiles/teleop.dir/flags.make
+appTeleop/CMakeFiles/teleop.dir/PathControl/Control.cpp.o: appTeleop/PathControl/Control.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alex/gitControl/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object appTeleop/CMakeFiles/teleop.dir/PathControl/Control.cpp.o"
+	cd /home/alex/gitControl/appTeleop && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/teleop.dir/PathControl/Control.cpp.o -c /home/alex/gitControl/appTeleop/PathControl/Control.cpp
+
+appTeleop/CMakeFiles/teleop.dir/PathControl/Control.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/teleop.dir/PathControl/Control.cpp.i"
+	cd /home/alex/gitControl/appTeleop && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alex/gitControl/appTeleop/PathControl/Control.cpp > CMakeFiles/teleop.dir/PathControl/Control.cpp.i
+
+appTeleop/CMakeFiles/teleop.dir/PathControl/Control.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/teleop.dir/PathControl/Control.cpp.s"
+	cd /home/alex/gitControl/appTeleop && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alex/gitControl/appTeleop/PathControl/Control.cpp -o CMakeFiles/teleop.dir/PathControl/Control.cpp.s
+
+appTeleop/CMakeFiles/teleop.dir/PathControl/Control.cpp.o.requires:
+.PHONY : appTeleop/CMakeFiles/teleop.dir/PathControl/Control.cpp.o.requires
+
+appTeleop/CMakeFiles/teleop.dir/PathControl/Control.cpp.o.provides: appTeleop/CMakeFiles/teleop.dir/PathControl/Control.cpp.o.requires
+	$(MAKE) -f appTeleop/CMakeFiles/teleop.dir/build.make appTeleop/CMakeFiles/teleop.dir/PathControl/Control.cpp.o.provides.build
+.PHONY : appTeleop/CMakeFiles/teleop.dir/PathControl/Control.cpp.o.provides
+
+appTeleop/CMakeFiles/teleop.dir/PathControl/Control.cpp.o.provides.build: appTeleop/CMakeFiles/teleop.dir/PathControl/Control.cpp.o
+
+appTeleop/CMakeFiles/teleop.dir/PathControl/Angular.cpp.o: appTeleop/CMakeFiles/teleop.dir/flags.make
+appTeleop/CMakeFiles/teleop.dir/PathControl/Angular.cpp.o: appTeleop/PathControl/Angular.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alex/gitControl/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object appTeleop/CMakeFiles/teleop.dir/PathControl/Angular.cpp.o"
+	cd /home/alex/gitControl/appTeleop && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/teleop.dir/PathControl/Angular.cpp.o -c /home/alex/gitControl/appTeleop/PathControl/Angular.cpp
+
+appTeleop/CMakeFiles/teleop.dir/PathControl/Angular.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/teleop.dir/PathControl/Angular.cpp.i"
+	cd /home/alex/gitControl/appTeleop && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alex/gitControl/appTeleop/PathControl/Angular.cpp > CMakeFiles/teleop.dir/PathControl/Angular.cpp.i
+
+appTeleop/CMakeFiles/teleop.dir/PathControl/Angular.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/teleop.dir/PathControl/Angular.cpp.s"
+	cd /home/alex/gitControl/appTeleop && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alex/gitControl/appTeleop/PathControl/Angular.cpp -o CMakeFiles/teleop.dir/PathControl/Angular.cpp.s
+
+appTeleop/CMakeFiles/teleop.dir/PathControl/Angular.cpp.o.requires:
+.PHONY : appTeleop/CMakeFiles/teleop.dir/PathControl/Angular.cpp.o.requires
+
+appTeleop/CMakeFiles/teleop.dir/PathControl/Angular.cpp.o.provides: appTeleop/CMakeFiles/teleop.dir/PathControl/Angular.cpp.o.requires
+	$(MAKE) -f appTeleop/CMakeFiles/teleop.dir/build.make appTeleop/CMakeFiles/teleop.dir/PathControl/Angular.cpp.o.provides.build
+.PHONY : appTeleop/CMakeFiles/teleop.dir/PathControl/Angular.cpp.o.provides
+
+appTeleop/CMakeFiles/teleop.dir/PathControl/Angular.cpp.o.provides.build: appTeleop/CMakeFiles/teleop.dir/PathControl/Angular.cpp.o
+
+appTeleop/CMakeFiles/teleop.dir/PathControl/AngDistToSeg.cpp.o: appTeleop/CMakeFiles/teleop.dir/flags.make
+appTeleop/CMakeFiles/teleop.dir/PathControl/AngDistToSeg.cpp.o: appTeleop/PathControl/AngDistToSeg.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alex/gitControl/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object appTeleop/CMakeFiles/teleop.dir/PathControl/AngDistToSeg.cpp.o"
+	cd /home/alex/gitControl/appTeleop && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/teleop.dir/PathControl/AngDistToSeg.cpp.o -c /home/alex/gitControl/appTeleop/PathControl/AngDistToSeg.cpp
+
+appTeleop/CMakeFiles/teleop.dir/PathControl/AngDistToSeg.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/teleop.dir/PathControl/AngDistToSeg.cpp.i"
+	cd /home/alex/gitControl/appTeleop && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alex/gitControl/appTeleop/PathControl/AngDistToSeg.cpp > CMakeFiles/teleop.dir/PathControl/AngDistToSeg.cpp.i
+
+appTeleop/CMakeFiles/teleop.dir/PathControl/AngDistToSeg.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/teleop.dir/PathControl/AngDistToSeg.cpp.s"
+	cd /home/alex/gitControl/appTeleop && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alex/gitControl/appTeleop/PathControl/AngDistToSeg.cpp -o CMakeFiles/teleop.dir/PathControl/AngDistToSeg.cpp.s
+
+appTeleop/CMakeFiles/teleop.dir/PathControl/AngDistToSeg.cpp.o.requires:
+.PHONY : appTeleop/CMakeFiles/teleop.dir/PathControl/AngDistToSeg.cpp.o.requires
+
+appTeleop/CMakeFiles/teleop.dir/PathControl/AngDistToSeg.cpp.o.provides: appTeleop/CMakeFiles/teleop.dir/PathControl/AngDistToSeg.cpp.o.requires
+	$(MAKE) -f appTeleop/CMakeFiles/teleop.dir/build.make appTeleop/CMakeFiles/teleop.dir/PathControl/AngDistToSeg.cpp.o.provides.build
+.PHONY : appTeleop/CMakeFiles/teleop.dir/PathControl/AngDistToSeg.cpp.o.provides
+
+appTeleop/CMakeFiles/teleop.dir/PathControl/AngDistToSeg.cpp.o.provides.build: appTeleop/CMakeFiles/teleop.dir/PathControl/AngDistToSeg.cpp.o
+
+appTeleop/CMakeFiles/teleop.dir/PathControl/CalculoError.cpp.o: appTeleop/CMakeFiles/teleop.dir/flags.make
+appTeleop/CMakeFiles/teleop.dir/PathControl/CalculoError.cpp.o: appTeleop/PathControl/CalculoError.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alex/gitControl/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object appTeleop/CMakeFiles/teleop.dir/PathControl/CalculoError.cpp.o"
+	cd /home/alex/gitControl/appTeleop && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/teleop.dir/PathControl/CalculoError.cpp.o -c /home/alex/gitControl/appTeleop/PathControl/CalculoError.cpp
+
+appTeleop/CMakeFiles/teleop.dir/PathControl/CalculoError.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/teleop.dir/PathControl/CalculoError.cpp.i"
+	cd /home/alex/gitControl/appTeleop && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alex/gitControl/appTeleop/PathControl/CalculoError.cpp > CMakeFiles/teleop.dir/PathControl/CalculoError.cpp.i
+
+appTeleop/CMakeFiles/teleop.dir/PathControl/CalculoError.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/teleop.dir/PathControl/CalculoError.cpp.s"
+	cd /home/alex/gitControl/appTeleop && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alex/gitControl/appTeleop/PathControl/CalculoError.cpp -o CMakeFiles/teleop.dir/PathControl/CalculoError.cpp.s
+
+appTeleop/CMakeFiles/teleop.dir/PathControl/CalculoError.cpp.o.requires:
+.PHONY : appTeleop/CMakeFiles/teleop.dir/PathControl/CalculoError.cpp.o.requires
+
+appTeleop/CMakeFiles/teleop.dir/PathControl/CalculoError.cpp.o.provides: appTeleop/CMakeFiles/teleop.dir/PathControl/CalculoError.cpp.o.requires
+	$(MAKE) -f appTeleop/CMakeFiles/teleop.dir/build.make appTeleop/CMakeFiles/teleop.dir/PathControl/CalculoError.cpp.o.provides.build
+.PHONY : appTeleop/CMakeFiles/teleop.dir/PathControl/CalculoError.cpp.o.provides
+
+appTeleop/CMakeFiles/teleop.dir/PathControl/CalculoError.cpp.o.provides.build: appTeleop/CMakeFiles/teleop.dir/PathControl/CalculoError.cpp.o
+
+appTeleop/CMakeFiles/teleop.dir/PathControl/ADSK.cpp.o: appTeleop/CMakeFiles/teleop.dir/flags.make
+appTeleop/CMakeFiles/teleop.dir/PathControl/ADSK.cpp.o: appTeleop/PathControl/ADSK.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alex/gitControl/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object appTeleop/CMakeFiles/teleop.dir/PathControl/ADSK.cpp.o"
+	cd /home/alex/gitControl/appTeleop && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/teleop.dir/PathControl/ADSK.cpp.o -c /home/alex/gitControl/appTeleop/PathControl/ADSK.cpp
+
+appTeleop/CMakeFiles/teleop.dir/PathControl/ADSK.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/teleop.dir/PathControl/ADSK.cpp.i"
+	cd /home/alex/gitControl/appTeleop && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alex/gitControl/appTeleop/PathControl/ADSK.cpp > CMakeFiles/teleop.dir/PathControl/ADSK.cpp.i
+
+appTeleop/CMakeFiles/teleop.dir/PathControl/ADSK.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/teleop.dir/PathControl/ADSK.cpp.s"
+	cd /home/alex/gitControl/appTeleop && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alex/gitControl/appTeleop/PathControl/ADSK.cpp -o CMakeFiles/teleop.dir/PathControl/ADSK.cpp.s
+
+appTeleop/CMakeFiles/teleop.dir/PathControl/ADSK.cpp.o.requires:
+.PHONY : appTeleop/CMakeFiles/teleop.dir/PathControl/ADSK.cpp.o.requires
+
+appTeleop/CMakeFiles/teleop.dir/PathControl/ADSK.cpp.o.provides: appTeleop/CMakeFiles/teleop.dir/PathControl/ADSK.cpp.o.requires
+	$(MAKE) -f appTeleop/CMakeFiles/teleop.dir/build.make appTeleop/CMakeFiles/teleop.dir/PathControl/ADSK.cpp.o.provides.build
+.PHONY : appTeleop/CMakeFiles/teleop.dir/PathControl/ADSK.cpp.o.provides
+
+appTeleop/CMakeFiles/teleop.dir/PathControl/ADSK.cpp.o.provides.build: appTeleop/CMakeFiles/teleop.dir/PathControl/ADSK.cpp.o
+
+appTeleop/CMakeFiles/teleop.dir/ReactiveControl/Vision2D.cpp.o: appTeleop/CMakeFiles/teleop.dir/flags.make
+appTeleop/CMakeFiles/teleop.dir/ReactiveControl/Vision2D.cpp.o: appTeleop/ReactiveControl/Vision2D.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alex/gitControl/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object appTeleop/CMakeFiles/teleop.dir/ReactiveControl/Vision2D.cpp.o"
+	cd /home/alex/gitControl/appTeleop && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/teleop.dir/ReactiveControl/Vision2D.cpp.o -c /home/alex/gitControl/appTeleop/ReactiveControl/Vision2D.cpp
+
+appTeleop/CMakeFiles/teleop.dir/ReactiveControl/Vision2D.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/teleop.dir/ReactiveControl/Vision2D.cpp.i"
+	cd /home/alex/gitControl/appTeleop && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alex/gitControl/appTeleop/ReactiveControl/Vision2D.cpp > CMakeFiles/teleop.dir/ReactiveControl/Vision2D.cpp.i
+
+appTeleop/CMakeFiles/teleop.dir/ReactiveControl/Vision2D.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/teleop.dir/ReactiveControl/Vision2D.cpp.s"
+	cd /home/alex/gitControl/appTeleop && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alex/gitControl/appTeleop/ReactiveControl/Vision2D.cpp -o CMakeFiles/teleop.dir/ReactiveControl/Vision2D.cpp.s
+
+appTeleop/CMakeFiles/teleop.dir/ReactiveControl/Vision2D.cpp.o.requires:
+.PHONY : appTeleop/CMakeFiles/teleop.dir/ReactiveControl/Vision2D.cpp.o.requires
+
+appTeleop/CMakeFiles/teleop.dir/ReactiveControl/Vision2D.cpp.o.provides: appTeleop/CMakeFiles/teleop.dir/ReactiveControl/Vision2D.cpp.o.requires
+	$(MAKE) -f appTeleop/CMakeFiles/teleop.dir/build.make appTeleop/CMakeFiles/teleop.dir/ReactiveControl/Vision2D.cpp.o.provides.build
+.PHONY : appTeleop/CMakeFiles/teleop.dir/ReactiveControl/Vision2D.cpp.o.provides
+
+appTeleop/CMakeFiles/teleop.dir/ReactiveControl/Vision2D.cpp.o.provides.build: appTeleop/CMakeFiles/teleop.dir/ReactiveControl/Vision2D.cpp.o
+
+appTeleop/CMakeFiles/teleop.dir/ReactiveControl/ControlReactivo.cpp.o: appTeleop/CMakeFiles/teleop.dir/flags.make
+appTeleop/CMakeFiles/teleop.dir/ReactiveControl/ControlReactivo.cpp.o: appTeleop/ReactiveControl/ControlReactivo.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alex/gitControl/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object appTeleop/CMakeFiles/teleop.dir/ReactiveControl/ControlReactivo.cpp.o"
+	cd /home/alex/gitControl/appTeleop && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/teleop.dir/ReactiveControl/ControlReactivo.cpp.o -c /home/alex/gitControl/appTeleop/ReactiveControl/ControlReactivo.cpp
+
+appTeleop/CMakeFiles/teleop.dir/ReactiveControl/ControlReactivo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/teleop.dir/ReactiveControl/ControlReactivo.cpp.i"
+	cd /home/alex/gitControl/appTeleop && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alex/gitControl/appTeleop/ReactiveControl/ControlReactivo.cpp > CMakeFiles/teleop.dir/ReactiveControl/ControlReactivo.cpp.i
+
+appTeleop/CMakeFiles/teleop.dir/ReactiveControl/ControlReactivo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/teleop.dir/ReactiveControl/ControlReactivo.cpp.s"
+	cd /home/alex/gitControl/appTeleop && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alex/gitControl/appTeleop/ReactiveControl/ControlReactivo.cpp -o CMakeFiles/teleop.dir/ReactiveControl/ControlReactivo.cpp.s
+
+appTeleop/CMakeFiles/teleop.dir/ReactiveControl/ControlReactivo.cpp.o.requires:
+.PHONY : appTeleop/CMakeFiles/teleop.dir/ReactiveControl/ControlReactivo.cpp.o.requires
+
+appTeleop/CMakeFiles/teleop.dir/ReactiveControl/ControlReactivo.cpp.o.provides: appTeleop/CMakeFiles/teleop.dir/ReactiveControl/ControlReactivo.cpp.o.requires
+	$(MAKE) -f appTeleop/CMakeFiles/teleop.dir/build.make appTeleop/CMakeFiles/teleop.dir/ReactiveControl/ControlReactivo.cpp.o.provides.build
+.PHONY : appTeleop/CMakeFiles/teleop.dir/ReactiveControl/ControlReactivo.cpp.o.provides
+
+appTeleop/CMakeFiles/teleop.dir/ReactiveControl/ControlReactivo.cpp.o.provides.build: appTeleop/CMakeFiles/teleop.dir/ReactiveControl/ControlReactivo.cpp.o
+
 # Object files for target teleop
 teleop_OBJECTS = \
 "CMakeFiles/teleop.dir/teleop.cpp.o" \
-"CMakeFiles/teleop.dir/glutapp.cpp.o"
+"CMakeFiles/teleop.dir/glutapp.cpp.o" \
+"CMakeFiles/teleop.dir/PathControl/Control.cpp.o" \
+"CMakeFiles/teleop.dir/PathControl/Angular.cpp.o" \
+"CMakeFiles/teleop.dir/PathControl/AngDistToSeg.cpp.o" \
+"CMakeFiles/teleop.dir/PathControl/CalculoError.cpp.o" \
+"CMakeFiles/teleop.dir/PathControl/ADSK.cpp.o" \
+"CMakeFiles/teleop.dir/ReactiveControl/Vision2D.cpp.o" \
+"CMakeFiles/teleop.dir/ReactiveControl/ControlReactivo.cpp.o"
 
 # External object files for target teleop
 teleop_EXTERNAL_OBJECTS =
 
 appTeleop/teleop: appTeleop/CMakeFiles/teleop.dir/teleop.cpp.o
 appTeleop/teleop: appTeleop/CMakeFiles/teleop.dir/glutapp.cpp.o
+appTeleop/teleop: appTeleop/CMakeFiles/teleop.dir/PathControl/Control.cpp.o
+appTeleop/teleop: appTeleop/CMakeFiles/teleop.dir/PathControl/Angular.cpp.o
+appTeleop/teleop: appTeleop/CMakeFiles/teleop.dir/PathControl/AngDistToSeg.cpp.o
+appTeleop/teleop: appTeleop/CMakeFiles/teleop.dir/PathControl/CalculoError.cpp.o
+appTeleop/teleop: appTeleop/CMakeFiles/teleop.dir/PathControl/ADSK.cpp.o
+appTeleop/teleop: appTeleop/CMakeFiles/teleop.dir/ReactiveControl/Vision2D.cpp.o
+appTeleop/teleop: appTeleop/CMakeFiles/teleop.dir/ReactiveControl/ControlReactivo.cpp.o
 appTeleop/teleop: appTeleop/CMakeFiles/teleop.dir/build.make
 appTeleop/teleop: appTeleop/CMakeFiles/teleop.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable teleop"
@@ -113,6 +288,13 @@ appTeleop/CMakeFiles/teleop.dir/build: appTeleop/teleop
 
 appTeleop/CMakeFiles/teleop.dir/requires: appTeleop/CMakeFiles/teleop.dir/teleop.cpp.o.requires
 appTeleop/CMakeFiles/teleop.dir/requires: appTeleop/CMakeFiles/teleop.dir/glutapp.cpp.o.requires
+appTeleop/CMakeFiles/teleop.dir/requires: appTeleop/CMakeFiles/teleop.dir/PathControl/Control.cpp.o.requires
+appTeleop/CMakeFiles/teleop.dir/requires: appTeleop/CMakeFiles/teleop.dir/PathControl/Angular.cpp.o.requires
+appTeleop/CMakeFiles/teleop.dir/requires: appTeleop/CMakeFiles/teleop.dir/PathControl/AngDistToSeg.cpp.o.requires
+appTeleop/CMakeFiles/teleop.dir/requires: appTeleop/CMakeFiles/teleop.dir/PathControl/CalculoError.cpp.o.requires
+appTeleop/CMakeFiles/teleop.dir/requires: appTeleop/CMakeFiles/teleop.dir/PathControl/ADSK.cpp.o.requires
+appTeleop/CMakeFiles/teleop.dir/requires: appTeleop/CMakeFiles/teleop.dir/ReactiveControl/Vision2D.cpp.o.requires
+appTeleop/CMakeFiles/teleop.dir/requires: appTeleop/CMakeFiles/teleop.dir/ReactiveControl/ControlReactivo.cpp.o.requires
 .PHONY : appTeleop/CMakeFiles/teleop.dir/requires
 
 appTeleop/CMakeFiles/teleop.dir/clean:

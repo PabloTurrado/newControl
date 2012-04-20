@@ -1,10 +1,18 @@
-#include "mrcore/mrcore.h"
+//#include "mrcore/mrcore.h"    //Funciona, pero NetBeans no reconoce los comandos
+#include "/usr/local/mrcore/include/mrcore/mrcore.h"
 
 
 #include <iostream>
 #include "glutapp.h"
-#include "reactivecontrol.h"
-#include "trajcontrol.h"
+//#include "reactivecontrol.h"
+//#include "trajcontrol.h"
+#include "PathControl/ADSK.h"
+#include "PathControl/AngDistToSeg.h"
+#include "PathControl/Angular.h"
+#include "PathControl/CalculoError.h"
+#include "PathControl/Control.h"
+#include "ReactiveControl/ControlReactivo.h"
+#include "ReactiveControl/Vision2D.h"
 
 using namespace mr;
 using namespace std;
@@ -18,20 +26,21 @@ public:
 		scene.addObject(&world);
 		scene.SetViewPoint(35,160,25);	
 		va=vg=0;
-
-		vector<Vector2D> path;
-		path.push_back(Vector2D(0,0));
-		path.push_back(Vector2D(20,0));
-		path.push_back(Vector2D(20,10));
-		path.push_back(Vector2D(-1,10));
-		path.push_back(Vector2D(-1,1));
-		traj.setPath(path);
+                controlangular=new Angular();
+                controldistancia=new AngDistToSeg();
+                controlboth=new ADSK();
+                STOP=false;
+                savedata=false;
+                readData=false;
 	}
 	void Draw(void)
 	{
 		scene.Draw();
-		traj.drawGL();
-		control.drawGL();
+		//traj.drawGL();
+		controlboth->drawGL();
+                vision2d.drawGL();
+                reactivecontrol.Draw();
+                                
 	}
 	void Timer(float time)
 	{
@@ -46,6 +55,24 @@ public:
 		double roll,pitch,yaw;
 		pose.orientation.getRPY(roll,pitch,yaw);
 		Pose2D robotPose(pose.position.x,pose.position.y,yaw);
+                
+                controlboth->SetPose(odom);
+                vision2d.SetPose(odom);
+                vision2d.SetLaser(laserData);
+                controlboth->GetVel(va,vg);
+                
+                //ControlReactivo
+                vector <Vector2D> point_;
+                vector <double> range_;
+                double yaw_;
+                Vector2D pos_;
+                vector<Vector2D> pointsObject_;
+                vector<double> rangeObject_;
+
+                vision2d.GetData(point_, range_, yaw_, pos_, pointsObject_, rangeObject_);
+                reactivecontrol.SetPoseVision(point_, range_, yaw_, pos_, pointsObject_, rangeObject_);
+                
+
 
 	//	traj.setData(robotPose);
 	//	traj.getSpeed(va,vg);
@@ -54,6 +81,20 @@ public:
 	//	control.setData(laserData);
 		float va2=va,vg2=vg;
 	//	control.getSpeed(va2,vg2);	
+                
+                //Decision
+                if (reactivecontrol.GetDistanceOk()) {
+                    //danger
+                    reactivecontrol.SetGetVel(va2, vg2);
+
+                } else {
+                    //cout<<"Sin Objetos Cerca"<<endl;
+                }
+                
+                if (STOP)
+                    va2 = vg2 = 0.0f;
+                
+
 		robot->move(va2,vg2);
 	}
 	void Key(unsigned char key)
@@ -92,13 +133,27 @@ public:
 		scene.MouseButton(x,y,b,down,sKey,ctrlKey);
 		glutPostRedisplay();
 	}
+        
+        //TrajControl traj;
+        Control *controlboth;      //De moment, para que el path input pueda cogerlo
 private:
 	float vg,va;
 	GLScene scene;
 	World world;
 	MobileRobot* robot;
-	ReactiveControl control;
-	TrajControl traj;
+
+        //Control
+        Control *controlangular;
+        Control *controldistancia;
+        CalculoError calculoerror;
+        Vision2D vision2d;
+        ControlReactivo reactivecontrol;
+        
+        bool STOP;
+        //Save&read
+        bool savedata;
+        bool readData;
+
 };
 
 void printUsage();
@@ -115,9 +170,50 @@ int main(int argc,char* argv[])
 	int port=-1;
 	if(robotname=="nemo")
 		robot=new Nemo;*/
+    
+    	string text;
+	if(argc==2)
+		text=string(argv[1]);
+	else
+	{
+		cout<<"You have not specify a configuration file as command line parameter"<<endl;
+		cout<<"Please type configuration file: ";
+		string text;
+		cin>>text;
+	}
+	cout<<"Loading configuration file: "<<text<<endl;
+                
 	MobileRobot* robot=new Neo();
 	robot->connectClients("127.0.0.1",13000);
 	MyGlutApp myApp("teleop",robot);
+        
+        //Leer archivo
+	std::ifstream file(text.c_str());
+        if (!file.is_open()) {
+            printf("File not found!!\n");
+        }
+        vector<Vector2D> path;
+        path.clear();
+        int numpath;
+        file>>numpath;
+        path.resize(numpath);
+        for (int i = 0; i < numpath; i++) {
+            file>>path[i].x>>path[i].y;
+        }
+        file.close();
+        
+        vector<Vector3D> auxpath;       //Hasta que SetTray reciba vectores2d
+        auxpath.clear();
+        auxpath.resize(path.size());
+        for (int i = 0; i < path.size(); i++) {
+            auxpath[i].x=path[i].x;
+            auxpath[i].y=path[i].y;
+            auxpath[i].z=0.0;
+        }
+
+        myApp.controlboth->SetTray(auxpath);
+        //Fin leer archivo
+        
 	myApp.Run();
 	return 0;   
 }

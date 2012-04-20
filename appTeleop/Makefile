@@ -150,6 +150,174 @@ teleop/fast:
 	cd /home/alex/gitControl && $(MAKE) -f appTeleop/CMakeFiles/teleop.dir/build.make appTeleop/CMakeFiles/teleop.dir/build
 .PHONY : teleop/fast
 
+PathControl/ADSK.o: PathControl/ADSK.cpp.o
+.PHONY : PathControl/ADSK.o
+
+# target to build an object file
+PathControl/ADSK.cpp.o:
+	cd /home/alex/gitControl && $(MAKE) -f appTeleop/CMakeFiles/teleop.dir/build.make appTeleop/CMakeFiles/teleop.dir/PathControl/ADSK.cpp.o
+.PHONY : PathControl/ADSK.cpp.o
+
+PathControl/ADSK.i: PathControl/ADSK.cpp.i
+.PHONY : PathControl/ADSK.i
+
+# target to preprocess a source file
+PathControl/ADSK.cpp.i:
+	cd /home/alex/gitControl && $(MAKE) -f appTeleop/CMakeFiles/teleop.dir/build.make appTeleop/CMakeFiles/teleop.dir/PathControl/ADSK.cpp.i
+.PHONY : PathControl/ADSK.cpp.i
+
+PathControl/ADSK.s: PathControl/ADSK.cpp.s
+.PHONY : PathControl/ADSK.s
+
+# target to generate assembly for a file
+PathControl/ADSK.cpp.s:
+	cd /home/alex/gitControl && $(MAKE) -f appTeleop/CMakeFiles/teleop.dir/build.make appTeleop/CMakeFiles/teleop.dir/PathControl/ADSK.cpp.s
+.PHONY : PathControl/ADSK.cpp.s
+
+PathControl/AngDistToSeg.o: PathControl/AngDistToSeg.cpp.o
+.PHONY : PathControl/AngDistToSeg.o
+
+# target to build an object file
+PathControl/AngDistToSeg.cpp.o:
+	cd /home/alex/gitControl && $(MAKE) -f appTeleop/CMakeFiles/teleop.dir/build.make appTeleop/CMakeFiles/teleop.dir/PathControl/AngDistToSeg.cpp.o
+.PHONY : PathControl/AngDistToSeg.cpp.o
+
+PathControl/AngDistToSeg.i: PathControl/AngDistToSeg.cpp.i
+.PHONY : PathControl/AngDistToSeg.i
+
+# target to preprocess a source file
+PathControl/AngDistToSeg.cpp.i:
+	cd /home/alex/gitControl && $(MAKE) -f appTeleop/CMakeFiles/teleop.dir/build.make appTeleop/CMakeFiles/teleop.dir/PathControl/AngDistToSeg.cpp.i
+.PHONY : PathControl/AngDistToSeg.cpp.i
+
+PathControl/AngDistToSeg.s: PathControl/AngDistToSeg.cpp.s
+.PHONY : PathControl/AngDistToSeg.s
+
+# target to generate assembly for a file
+PathControl/AngDistToSeg.cpp.s:
+	cd /home/alex/gitControl && $(MAKE) -f appTeleop/CMakeFiles/teleop.dir/build.make appTeleop/CMakeFiles/teleop.dir/PathControl/AngDistToSeg.cpp.s
+.PHONY : PathControl/AngDistToSeg.cpp.s
+
+PathControl/Angular.o: PathControl/Angular.cpp.o
+.PHONY : PathControl/Angular.o
+
+# target to build an object file
+PathControl/Angular.cpp.o:
+	cd /home/alex/gitControl && $(MAKE) -f appTeleop/CMakeFiles/teleop.dir/build.make appTeleop/CMakeFiles/teleop.dir/PathControl/Angular.cpp.o
+.PHONY : PathControl/Angular.cpp.o
+
+PathControl/Angular.i: PathControl/Angular.cpp.i
+.PHONY : PathControl/Angular.i
+
+# target to preprocess a source file
+PathControl/Angular.cpp.i:
+	cd /home/alex/gitControl && $(MAKE) -f appTeleop/CMakeFiles/teleop.dir/build.make appTeleop/CMakeFiles/teleop.dir/PathControl/Angular.cpp.i
+.PHONY : PathControl/Angular.cpp.i
+
+PathControl/Angular.s: PathControl/Angular.cpp.s
+.PHONY : PathControl/Angular.s
+
+# target to generate assembly for a file
+PathControl/Angular.cpp.s:
+	cd /home/alex/gitControl && $(MAKE) -f appTeleop/CMakeFiles/teleop.dir/build.make appTeleop/CMakeFiles/teleop.dir/PathControl/Angular.cpp.s
+.PHONY : PathControl/Angular.cpp.s
+
+PathControl/CalculoError.o: PathControl/CalculoError.cpp.o
+.PHONY : PathControl/CalculoError.o
+
+# target to build an object file
+PathControl/CalculoError.cpp.o:
+	cd /home/alex/gitControl && $(MAKE) -f appTeleop/CMakeFiles/teleop.dir/build.make appTeleop/CMakeFiles/teleop.dir/PathControl/CalculoError.cpp.o
+.PHONY : PathControl/CalculoError.cpp.o
+
+PathControl/CalculoError.i: PathControl/CalculoError.cpp.i
+.PHONY : PathControl/CalculoError.i
+
+# target to preprocess a source file
+PathControl/CalculoError.cpp.i:
+	cd /home/alex/gitControl && $(MAKE) -f appTeleop/CMakeFiles/teleop.dir/build.make appTeleop/CMakeFiles/teleop.dir/PathControl/CalculoError.cpp.i
+.PHONY : PathControl/CalculoError.cpp.i
+
+PathControl/CalculoError.s: PathControl/CalculoError.cpp.s
+.PHONY : PathControl/CalculoError.s
+
+# target to generate assembly for a file
+PathControl/CalculoError.cpp.s:
+	cd /home/alex/gitControl && $(MAKE) -f appTeleop/CMakeFiles/teleop.dir/build.make appTeleop/CMakeFiles/teleop.dir/PathControl/CalculoError.cpp.s
+.PHONY : PathControl/CalculoError.cpp.s
+
+PathControl/Control.o: PathControl/Control.cpp.o
+.PHONY : PathControl/Control.o
+
+# target to build an object file
+PathControl/Control.cpp.o:
+	cd /home/alex/gitControl && $(MAKE) -f appTeleop/CMakeFiles/teleop.dir/build.make appTeleop/CMakeFiles/teleop.dir/PathControl/Control.cpp.o
+.PHONY : PathControl/Control.cpp.o
+
+PathControl/Control.i: PathControl/Control.cpp.i
+.PHONY : PathControl/Control.i
+
+# target to preprocess a source file
+PathControl/Control.cpp.i:
+	cd /home/alex/gitControl && $(MAKE) -f appTeleop/CMakeFiles/teleop.dir/build.make appTeleop/CMakeFiles/teleop.dir/PathControl/Control.cpp.i
+.PHONY : PathControl/Control.cpp.i
+
+PathControl/Control.s: PathControl/Control.cpp.s
+.PHONY : PathControl/Control.s
+
+# target to generate assembly for a file
+PathControl/Control.cpp.s:
+	cd /home/alex/gitControl && $(MAKE) -f appTeleop/CMakeFiles/teleop.dir/build.make appTeleop/CMakeFiles/teleop.dir/PathControl/Control.cpp.s
+.PHONY : PathControl/Control.cpp.s
+
+ReactiveControl/ControlReactivo.o: ReactiveControl/ControlReactivo.cpp.o
+.PHONY : ReactiveControl/ControlReactivo.o
+
+# target to build an object file
+ReactiveControl/ControlReactivo.cpp.o:
+	cd /home/alex/gitControl && $(MAKE) -f appTeleop/CMakeFiles/teleop.dir/build.make appTeleop/CMakeFiles/teleop.dir/ReactiveControl/ControlReactivo.cpp.o
+.PHONY : ReactiveControl/ControlReactivo.cpp.o
+
+ReactiveControl/ControlReactivo.i: ReactiveControl/ControlReactivo.cpp.i
+.PHONY : ReactiveControl/ControlReactivo.i
+
+# target to preprocess a source file
+ReactiveControl/ControlReactivo.cpp.i:
+	cd /home/alex/gitControl && $(MAKE) -f appTeleop/CMakeFiles/teleop.dir/build.make appTeleop/CMakeFiles/teleop.dir/ReactiveControl/ControlReactivo.cpp.i
+.PHONY : ReactiveControl/ControlReactivo.cpp.i
+
+ReactiveControl/ControlReactivo.s: ReactiveControl/ControlReactivo.cpp.s
+.PHONY : ReactiveControl/ControlReactivo.s
+
+# target to generate assembly for a file
+ReactiveControl/ControlReactivo.cpp.s:
+	cd /home/alex/gitControl && $(MAKE) -f appTeleop/CMakeFiles/teleop.dir/build.make appTeleop/CMakeFiles/teleop.dir/ReactiveControl/ControlReactivo.cpp.s
+.PHONY : ReactiveControl/ControlReactivo.cpp.s
+
+ReactiveControl/Vision2D.o: ReactiveControl/Vision2D.cpp.o
+.PHONY : ReactiveControl/Vision2D.o
+
+# target to build an object file
+ReactiveControl/Vision2D.cpp.o:
+	cd /home/alex/gitControl && $(MAKE) -f appTeleop/CMakeFiles/teleop.dir/build.make appTeleop/CMakeFiles/teleop.dir/ReactiveControl/Vision2D.cpp.o
+.PHONY : ReactiveControl/Vision2D.cpp.o
+
+ReactiveControl/Vision2D.i: ReactiveControl/Vision2D.cpp.i
+.PHONY : ReactiveControl/Vision2D.i
+
+# target to preprocess a source file
+ReactiveControl/Vision2D.cpp.i:
+	cd /home/alex/gitControl && $(MAKE) -f appTeleop/CMakeFiles/teleop.dir/build.make appTeleop/CMakeFiles/teleop.dir/ReactiveControl/Vision2D.cpp.i
+.PHONY : ReactiveControl/Vision2D.cpp.i
+
+ReactiveControl/Vision2D.s: ReactiveControl/Vision2D.cpp.s
+.PHONY : ReactiveControl/Vision2D.s
+
+# target to generate assembly for a file
+ReactiveControl/Vision2D.cpp.s:
+	cd /home/alex/gitControl && $(MAKE) -f appTeleop/CMakeFiles/teleop.dir/build.make appTeleop/CMakeFiles/teleop.dir/ReactiveControl/Vision2D.cpp.s
+.PHONY : ReactiveControl/Vision2D.cpp.s
+
 glutapp.o: glutapp.cpp.o
 .PHONY : glutapp.o
 
@@ -211,6 +379,27 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... teleop"
+	@echo "... PathControl/ADSK.o"
+	@echo "... PathControl/ADSK.i"
+	@echo "... PathControl/ADSK.s"
+	@echo "... PathControl/AngDistToSeg.o"
+	@echo "... PathControl/AngDistToSeg.i"
+	@echo "... PathControl/AngDistToSeg.s"
+	@echo "... PathControl/Angular.o"
+	@echo "... PathControl/Angular.i"
+	@echo "... PathControl/Angular.s"
+	@echo "... PathControl/CalculoError.o"
+	@echo "... PathControl/CalculoError.i"
+	@echo "... PathControl/CalculoError.s"
+	@echo "... PathControl/Control.o"
+	@echo "... PathControl/Control.i"
+	@echo "... PathControl/Control.s"
+	@echo "... ReactiveControl/ControlReactivo.o"
+	@echo "... ReactiveControl/ControlReactivo.i"
+	@echo "... ReactiveControl/ControlReactivo.s"
+	@echo "... ReactiveControl/Vision2D.o"
+	@echo "... ReactiveControl/Vision2D.i"
+	@echo "... ReactiveControl/Vision2D.s"
 	@echo "... glutapp.o"
 	@echo "... glutapp.i"
 	@echo "... glutapp.s"

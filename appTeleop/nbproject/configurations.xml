@@ -18,8 +18,31 @@
         <df name="Progress">
         </df>
         <df name="teleop.dir">
+          <df name="PathControl">
+          </df>
+          <df name="ReactiveControl">
+          </df>
         </df>
       </df>
+      <df name="PathControl">
+        <in>ADSK.cpp</in>
+        <in>ADSK.h</in>
+        <in>AngDistToSeg.cpp</in>
+        <in>AngDistToSeg.h</in>
+        <in>Angular.cpp</in>
+        <in>Angular.h</in>
+        <in>CalculoError.cpp</in>
+        <in>CalculoError.h</in>
+        <in>Control.cpp</in>
+        <in>Control.h</in>
+      </df>
+      <df name="ReactiveControl">
+        <in>ControlReactivo.cpp</in>
+        <in>ControlReactivo.h</in>
+        <in>Vision2D.cpp</in>
+        <in>Vision2D.h</in>
+      </df>
+      <in>globalFunctions.h</in>
       <in>glutapp.cpp</in>
       <in>glutapp.h</in>
       <in>reactivecontrol.h</in>
@@ -53,6 +76,88 @@
           <executablePath>teleop</executablePath>
         </makeTool>
       </makefileType>
+      <item path="RectiveControl/ControlReactivo.cpp" ex="true" tool="3" flavor="0">
+      </item>
+      <item path="RectiveControl/ControlReactivo.h" ex="true" tool="3" flavor="0">
+      </item>
+      <item path="RectiveControl/Vision2D.cpp" ex="true" tool="3" flavor="0">
+      </item>
+      <item path="RectiveControl/Vision2D.h" ex="true" tool="3" flavor="0">
+      </item>
+      <folder path="appTeleop/PathControl">
+        <ccTool>
+          <incDir>
+            <pElem>/usr/local/mrcore/include</pElem>
+            <pElem>../libraries/freeglut</pElem>
+            <pElem>../libraries/freeglut/include</pElem>
+            <pElem>../libraries/objects/include</pElem>
+            <pElem>../libraries/objects</pElem>
+            <pElem>../libraries/localizer</pElem>
+            <pElem>../libraries/localizer/include</pElem>
+            <pElem>/usr/local/mrcore/include/mrcore</pElem>
+            <pElem>.</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>FREEGLUT_STATIC</Elem>
+            <Elem>_CRT_SECURE_NO_WARNINGS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <folder path="appTeleop/ReactiveControl">
+        <ccTool>
+          <incDir>
+            <pElem>/usr/local/mrcore/include</pElem>
+            <pElem>../libraries/freeglut</pElem>
+            <pElem>../libraries/freeglut/include</pElem>
+            <pElem>../libraries/objects/include</pElem>
+            <pElem>../libraries/objects</pElem>
+            <pElem>../libraries/localizer</pElem>
+            <pElem>../libraries/localizer/include</pElem>
+            <pElem>/usr/local/mrcore/include/mrcore</pElem>
+            <pElem>.</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>FREEGLUT_STATIC</Elem>
+            <Elem>_CRT_SECURE_NO_WARNINGS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+      <item path="glutapp.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>/usr/local/mrcore/include</pElem>
+            <pElem>../libraries/freeglut</pElem>
+            <pElem>../libraries/freeglut/include</pElem>
+            <pElem>../libraries/objects/include</pElem>
+            <pElem>../libraries/objects</pElem>
+            <pElem>../libraries/localizer</pElem>
+            <pElem>../libraries/localizer/include</pElem>
+            <pElem>/usr/local/mrcore/include/mrcore</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>FREEGLUT_STATIC</Elem>
+            <Elem>_CRT_SECURE_NO_WARNINGS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="teleop.cpp" ex="false" tool="1" flavor="0">
+        <ccTool>
+          <incDir>
+            <pElem>../libraries/freeglut</pElem>
+            <pElem>/usr/local/mrcore/include</pElem>
+            <pElem>../libraries/objects/include</pElem>
+            <pElem>../libraries/freeglut/include</pElem>
+            <pElem>../libraries/objects</pElem>
+            <pElem>../libraries/localizer</pElem>
+            <pElem>../libraries/localizer/include</pElem>
+            <pElem>/usr/local/mrcore/include/mrcore</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>FREEGLUT_STATIC</Elem>
+            <Elem>_CRT_SECURE_NO_WARNINGS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
     </conf>
   </confs>
 </configurationDescriptor>

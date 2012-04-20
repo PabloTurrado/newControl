@@ -1,1 +1,9 @@
-Try new repository
+Three project:
+
+-simulator, in appSimulator/simulator, and need it a text file, like data/configMyRoom.txt
+run: ./simulator ../data/configMyRoom.txt
+
+-teleop, in appTeleop/teleop
+run: ./teleop
+
+-worldtest, in tests/worldtest 

@@ -22,7 +22,7 @@ public:
     void SetLaser(LaserData laserdata);
     void GetData(vector <Vector2D> &point_, vector <double> &range_, double &yaw_,
             Vector2D &pos_, vector <Vector2D> &pointsObject_,
-            vector <double> &rangeObject_);
+            vector <double> &rangeObject_,vector<Angle> &angleObject_);
 
     //Other functions
     void Save();
@@ -55,6 +55,8 @@ private:
     //LaserKinect
     vector<Vector2D> pointKinect2D;
     vector<double> rangeKinect2D;
+    vector<Angle> angleKinect2D;
+    vector <Angle> angleObject;
     //Objetos
     vector<int> indexObject;
     vector <Vector2D> pointsObject;

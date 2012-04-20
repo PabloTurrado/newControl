@@ -4,8 +4,7 @@
 
 #include <iostream>
 #include "glutapp.h"
-//#include "reactivecontrol.h"
-//#include "trajcontrol.h"
+
 #include "PathControl/ADSK.h"
 #include "PathControl/AngDistToSeg.h"
 #include "PathControl/Angular.h"
@@ -51,51 +50,70 @@ public:
 		robot->getLaserData(laserData);
 
 		//The odometry is full 3D, lets handle it only in 2D, as a Pose (x, y, theta)
-		Transformation3D pose=odom.pose;
-		double roll,pitch,yaw;
-		pose.orientation.getRPY(roll,pitch,yaw);
-		Pose2D robotPose(pose.position.x,pose.position.y,yaw);
+		//Transformation3D pose=odom.pose;
+		//double roll,pitch,yaw;
+		//pose.orientation.getRPY(roll,pitch,yaw);
+		//Pose2D robotPose(pose.position.x,pose.position.y,yaw);
                 
                 controlboth->SetPose(odom);
-                vision2d.SetPose(odom);
-                vision2d.SetLaser(laserData);
                 controlboth->GetVel(va,vg);
                 
-                //ControlReactivo
-                vector <Vector2D> point_;
-                vector <double> range_;
-                double yaw_;
-                Vector2D pos_;
-                vector<Vector2D> pointsObject_;
-                vector<double> rangeObject_;
+                vision2d.SetPose(odom);
+                vision2d.SetLaser(laserData);
+                                
+                reactivecontrol.SetPoseVision(vision2d);
+                reactivecontrol.SetCommand(va,vg);
 
-                vision2d.GetData(point_, range_, yaw_, pos_, pointsObject_, rangeObject_);
-                reactivecontrol.SetPoseVision(point_, range_, yaw_, pos_, pointsObject_, rangeObject_);
-                
-
-
-	//	traj.setData(robotPose);
-	//	traj.getSpeed(va,vg);
-
-	//	control.setCommand(va,vg);
-	//	control.setData(laserData);
 		float va2=va,vg2=vg;
-	//	control.getSpeed(va2,vg2);	
                 
-                //Decision
-                if (reactivecontrol.GetDistanceOk()) {
-                    //danger
-                    reactivecontrol.SetGetVel(va2, vg2);
-
-                } else {
-                    //cout<<"Sin Objetos Cerca"<<endl;
-                }
+                reactivecontrol.GetVel(va2, vg2);
+                
+//                //Decision
+//                if (reactivecontrol.GetDistanceOk()) {
+//                    //danger
+//                    reactivecontrol.SetGetVel(va2, vg2);
+//
+//                } else {
+//                    //cout<<"Sin Objetos Cerca"<<endl;
+//                }
                 
                 if (STOP)
                     va2 = vg2 = 0.0f;
                 
 
 		robot->move(va2,vg2);
+                
+                
+                /***************************
+                 **********************
+                if (globalAux) {
+                    vision2D.Save();
+                    controlreactivo.Save();
+                    globalAux = false;
+                }
+                if (savedata) {
+                    if (c_angular)
+                        controlangular->Save();
+                    if (c_distancia)
+                        controldistancia->Save();
+                    if (c_k)
+                        controladsk->Save();
+
+                    savedata = false;
+                }
+
+                if (readData) {
+                    if (c_angular)
+                        calculoerror.ReadFile();
+                    if (c_distancia)
+                        calculoerror.ReadFile();
+                    if (c_k)
+                        calculoerror.ReadFile();
+
+                    readData = false;
+                }
+                 ******************************
+                 **************************/
 	}
 	void Key(unsigned char key)
 	{
@@ -213,6 +231,10 @@ int main(int argc,char* argv[])
 
         myApp.controlboth->SetTray(auxpath);
         //Fin leer archivo
+        
+        string auxkey;
+        cout<<"Any key to start "<<endl;
+        cin>>auxkey;
         
 	myApp.Run();
 	return 0;   

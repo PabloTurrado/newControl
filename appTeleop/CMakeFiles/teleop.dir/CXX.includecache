@@ -11,14 +11,20 @@
 -
 
 /home/alex/gitControl/appTeleop/ReactiveControl/ControlReactivo.cpp
-GL/freeglut_std.h
--
 ControlReactivo.h
 /home/alex/gitControl/appTeleop/ReactiveControl/ControlReactivo.h
 ../globalFunctions.h
 /home/alex/gitControl/appTeleop/ReactiveControl/../globalFunctions.h
 
 /home/alex/gitControl/appTeleop/ReactiveControl/ControlReactivo.h
+/usr/local/mrcore/include/mrcore/mrcore.h
+-
+Vision2D.h
+/home/alex/gitControl/appTeleop/ReactiveControl/Vision2D.h
+iostream
+-
+
+/home/alex/gitControl/appTeleop/ReactiveControl/Vision2D.h
 /usr/local/mrcore/include/mrcore/mrcore.h
 -
 iostream
@@ -1701,18 +1707,4 @@ positionableentity.h
 /usr/local/mrcore/include/mrcore/world/positionableentity.h
 entityset.h
 /usr/local/mrcore/include/mrcore/world/entityset.h
-
-libraries/freeglut/include/GL/freeglut_std.h
-windows.h
--
-gl/gl.h
--
-gl/glu.h
--
-GL/gl.h
--
-GL/glu.h
--
-stdlib.h
--
 

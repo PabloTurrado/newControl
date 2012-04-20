@@ -26,6 +26,7 @@ Vision2D::Vision2D() {
     indexObject.clear();
     pointsObject.clear();
     rangeObject.clear();
+    angleKinect2D.clear();
 
 }
 
@@ -48,27 +49,35 @@ void Vision2D::SetLaser(LaserData laserdata) {
     //Operation range = 0.8m - 3.5m  //dejamos el por defecto, 10 metros
     //numstep=1.01229097/541=0.00187115;
 
-
-    //laserdata.setProperties(-0.506145485,0.00187115,541);
+    //laserdata.setProperties() //NO FUNCIONA!!!!!
     pointLaser = laserdata.getPoints();
     anglelaser = laserdata.getAngles();
     range = laserdata.getRanges();
     startangle = laserdata.getStartAngle();
     steplaser = laserdata.getStep();
-    //*****AUNQUE CAMBIE LAS PROPIEDADES, EL RANGE SIGUE MARCANDO COMO SI NO LO HUBIESE HECHO¡¡¡¡!!!!!
 
     //MANUALMENTE,el angulo +-0.50614 va del index 212-328, el rango que sea 8metros
+    //DE -PI/2 A +PI/2 (index 89-451, 451-89+1=363, rango=8metros.
+    //-pi/3 a +pi/3 (index 150-390)
+    int idxini=150;
+    int idxFin=390;
+    int idxRango=idxFin-idxini+1;
+    
     pointKinect2D.clear();
-    pointKinect2D.resize(117); //328-212+1, incluyen ambos
+    pointKinect2D.resize(idxRango);
     rangeKinect2D.clear();
-    rangeKinect2D.resize(117);
+    rangeKinect2D.resize(idxRango);
+    angleKinect2D.clear();
+    angleKinect2D.resize(idxRango);
     int j = 0;
-    for (int i = 212; i <= 328; i++) {
+    for (int i = idxini; i <= idxFin; i++) {
         pointKinect2D[j] = pointLaser[i];
         rangeKinect2D[j] = range[i];
+        angleKinect2D[j] = anglelaser[i];
         j++;
     }
-
+    
+    //Calculo index objetos
     indexObject.clear();
     rangeObject.clear();
     for (int i = 0; i < pointKinect2D.size(); i++) {
@@ -77,6 +86,7 @@ void Vision2D::SetLaser(LaserData laserdata) {
             rangeObject.push_back(rangeKinect2D[i]); //Sabremos donde esta el objeto (Haciendo la correspondiendte transformacion)
         }
     }
+    
     Object();
 
 }
@@ -92,15 +102,18 @@ void Vision2D::Object() {
 
     pointsObject.clear();
     pointsObject.resize(indexObject.size());
-
+    angleObject.clear();
+    angleObject.resize(indexObject.size());
     for (int i = 0; i < indexObject.size(); i++) {
         pointsObject[i] = pointsTrans[indexObject[i]];
+        angleObject[i]=angleKinect2D[indexObject[i]];
     }
 
 }
 
 void Vision2D::GetData(vector<Vector2D>& point_, vector<double>& range_,
-        double& yaw_, Vector2D& pos_, vector<Vector2D>& pointsObject_, vector<double> &rangeObject_) {
+        double& yaw_, Vector2D& pos_, vector<Vector2D>& pointsObject_,
+        vector<double> &rangeObject_, vector<Angle> &angleObject_) {
     point_ = pointKinect2D;
     range_ = rangeKinect2D;
     yaw_ = yaw;
@@ -108,6 +121,7 @@ void Vision2D::GetData(vector<Vector2D>& point_, vector<double>& range_,
     pos_.y = pos.y;
     pointsObject_ = pointsObject;
     rangeObject_ = rangeObject;
+    angleObject_=angleObject;
 }
 
 void Vision2D::Save() {
@@ -128,31 +142,32 @@ void Vision2D::Save() {
 }
 
 void Vision2D::drawGL() {
-    glPushMatrix();
-    
-    //Cono horiztontal de angulo de vision Kinect2D
-    Vector2D limInf = gf::TransformationRT2D(pointKinect2D[0], yaw, Vector2D(pos.x, pos.y));
-    Vector2D limSup = gf::TransformationRT2D(pointKinect2D[116], yaw, Vector2D(pos.x, pos.y));
+    if(!pointKinect2D.empty())
+    {
+        glPushMatrix();
+        //Cono horiztontal de angulo de vision Kinect2D
+        Vector2D limInf = gf::TransformationRT2D(pointKinect2D[0], yaw, Vector2D(pos.x, pos.y));
+        Vector2D limSup = gf::TransformationRT2D(pointKinect2D[pointKinect2D.size()-1], yaw, Vector2D(pos.x, pos.y));
 
-    glLineWidth(1.0);
-    glColor3ub(0, 200, 0);
-    
-    glBegin(GL_LINES);
-    glVertex3f(pos.x, pos.y, 0.4); // V0
-    glVertex3f(limInf.x, limInf.y, 0.4); // V1
-    glEnd();
-    glBegin(GL_LINES);
-    glVertex3f(pos.x, pos.y, 0.4); // V0
-    glVertex3f(limSup.x, limSup.y, 0.4); // V1
-    glEnd();
+        glLineWidth(1.0);
+        glColor3ub(0, 200, 0);
 
-    //Puntos de los objetos (VERDE)
-    glPointSize(1.0);
-    for (int i = 0; i < pointsObject.size(); i++) {
-        glBegin(GL_POINTS);
-        glVertex3f(pointsObject[i].x, pointsObject[i].y, 0.4);
+        glBegin(GL_LINES);
+        glVertex3f(pos.x, pos.y, 0.4); // V0
+        glVertex3f(limInf.x, limInf.y, 0.4); // V1
         glEnd();
-    }
+        glBegin(GL_LINES);
+        glVertex3f(pos.x, pos.y, 0.4); // V0
+        glVertex3f(limSup.x, limSup.y, 0.4); // V1
+        glEnd();
 
-    glPopMatrix();
+        //Puntos de los objetos (VERDE)
+        glPointSize(1.0);
+        for (int i = 0; i < pointsObject.size(); i++) {
+            glBegin(GL_POINTS);
+            glVertex3f(pointsObject[i].x, pointsObject[i].y, 0.4);
+            glEnd();
+        }
+        glPopMatrix();
+    }
 }

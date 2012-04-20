@@ -9,6 +9,7 @@
 #define	CONTROLREACTIVO_H
 
 #include "/usr/local/mrcore/include/mrcore/mrcore.h"
+#include "Vision2D.h"
 #include <iostream>
 
 class ControlReactivo {
@@ -17,20 +18,20 @@ public:
     ControlReactivo(const ControlReactivo& orig);
     virtual ~ControlReactivo();
 
-    void SetPoseVision(vector<Vector2D> point_, vector <double> range_, double yaw_,
-            Vector2D pos_, vector<Vector2D> pointsObject_, vector<double> rangeObject_);
+    void SetPoseVision(Vision2D &vision2d);
 
     inline bool GetDistanceOk() {
         return danger;
     };
-    void SetGetVel(float &, float &);
+    void SetCommand(float vela,float velg);
+    void GetVel(float &velaa, float &velgg);
 
     void Save();
     void Draw();
 
 private:
     bool ObjectDanger();
-    void Compute(float vela, float velg);
+    void Compute();
 
     vector <double> range;
     vector <Vector2D> points;
@@ -38,14 +39,22 @@ private:
     vector <Vector2D> pointsObjectDanger;
     vector <Vector2D> pointsObject;
     vector<double> rangeObject;
+    vector<Angle> angleObject;
     double rangeAction;
 
     double yaw;
     Vector2D pos2;
 
-    float outputGiro, outputAvance;
+    float outputGiro;
+    float outputAvance;
     bool danger;
     float rangeNeo;
+    
+    float kreactivoGiro;
+    float kreactivoAvance;
+    
+    float va;
+    float vg;
 
 };
 

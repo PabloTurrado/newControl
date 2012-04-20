@@ -65,8 +65,19 @@
       <item path="glutapp.cpp" ex="false" tool="1" flavor="0">
         <ccTool>
           <incDir>
-            <pElem>.</pElem>
+            <pElem>../libraries/freeglut</pElem>
+            <pElem>/usr/local/mrcore/include</pElem>
+            <pElem>../libraries/objects/include</pElem>
+            <pElem>../libraries/freeglut/include</pElem>
+            <pElem>../libraries/objects</pElem>
+            <pElem>../libraries/localizer</pElem>
+            <pElem>../libraries/localizer/include</pElem>
+            <pElem>/usr/local/mrcore/include/mrcore</pElem>
           </incDir>
+          <preprocessorList>
+            <Elem>FREEGLUT_STATIC</Elem>
+            <Elem>_CRT_SECURE_NO_WARNINGS</Elem>
+          </preprocessorList>
         </ccTool>
       </item>
       <item path="simulator.cpp" ex="false" tool="1" flavor="0">

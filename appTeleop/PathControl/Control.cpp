@@ -74,32 +74,35 @@ void Control::GetVel(float & vela, float & velg) {
 }
 
 void Control::drawGL() {
-    //***Trayectoria IDEAL***//
-    for (int i = 0; i < reftray.size() - 1; i++) {
-        glPushMatrix();
-        glLineWidth(4.0);
-        if (i % 2) glColor3ub(0, 0, 200);
-        else glColor3ub(0, 100, 200);
-        glBegin(GL_LINES);
-        glVertex3f(reftray[i].x, reftray[i].y, reftray[i].z); // V0
-        glVertex3f(reftray[i + 1].x, reftray[i + 1].y, reftray[i + 1].z); // V1
-        glEnd();
+    if(!reftray.empty())
+    {
+        //***Trayectoria IDEAL***//
+        for (int i = 0; i < reftray.size() - 1; i++) {
+            glPushMatrix();
+            glLineWidth(4.0);
+            if (i % 2) glColor3ub(0, 0, 200);
+            else glColor3ub(0, 100, 200);
+            glBegin(GL_LINES);
+            glVertex3f(reftray[i].x, reftray[i].y, reftray[i].z); // V0
+            glVertex3f(reftray[i + 1].x, reftray[i + 1].y, reftray[i + 1].z); // V1
+            glEnd();
 
-        glPopMatrix();
-    }
+            glPopMatrix();
+        }
 
-    //***Dibujando trayectoria REAL en puntos****/
-    for (int i = 0; i < posicionAcumulada.size(); i++) {
-        glPushMatrix();
-        glDisable(GL_LIGHTING);
-        glColor3f(errorVariableAcumulado[i].x / 0.8, 1 - errorVariableAcumulado[i].x / 0.8, 0);
+        //***Dibujando trayectoria REAL en puntos****/
+        for (int i = 0; i < posicionAcumulada.size(); i++) {
+            glPushMatrix();
+            glDisable(GL_LIGHTING);
+            glColor3f(errorVariableAcumulado[i].x / 0.8, 1 - errorVariableAcumulado[i].x / 0.8, 0);
 
-        glPointSize(4.0);
-        glBegin(GL_POINTS);
-        glVertex3f(posicionAcumulada[i].x, posicionAcumulada[i].y, posicionAcumulada[i].z);
-        glEnd();
-        glEnable(GL_LIGHTING);
-        glPopMatrix();
+            glPointSize(4.0);
+            glBegin(GL_POINTS);
+            glVertex3f(posicionAcumulada[i].x, posicionAcumulada[i].y, posicionAcumulada[i].z);
+            glEnd();
+            glEnable(GL_LIGHTING);
+            glPopMatrix();
+        }
     }
 }
 

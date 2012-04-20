@@ -76,14 +76,6 @@
           <executablePath>teleop</executablePath>
         </makeTool>
       </makefileType>
-      <item path="RectiveControl/ControlReactivo.cpp" ex="true" tool="3" flavor="0">
-      </item>
-      <item path="RectiveControl/ControlReactivo.h" ex="true" tool="3" flavor="0">
-      </item>
-      <item path="RectiveControl/Vision2D.cpp" ex="true" tool="3" flavor="0">
-      </item>
-      <item path="RectiveControl/Vision2D.h" ex="true" tool="3" flavor="0">
-      </item>
       <folder path="appTeleop/PathControl">
         <ccTool>
           <incDir>
